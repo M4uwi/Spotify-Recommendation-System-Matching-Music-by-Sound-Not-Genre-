@@ -1,0 +1,27 @@
+project:
+  name: "Spotify Song Recommendation System with Similarity Index"
+  version: "1.0.0"
+
+data:
+  dataset_url: "https://raw.githubusercontent.com/mafgl/Spotify-Dataset/master/spotify_songs.csv"
+  max_samples: 5000
+
+features:
+  acoustic_attributes:
+    - danceability
+    - energy
+    - key
+    - loudness
+    - mode
+    - speechiness
+    - acousticness
+    - instrumentalness
+    - liveness
+    - valence
+    - tempo
+
+model:
+  n_clusters: 8
+  pca_components: 2
+  random_state: 42
+  top_n_recommendations: 20
