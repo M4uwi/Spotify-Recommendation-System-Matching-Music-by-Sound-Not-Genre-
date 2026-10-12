@@ -8,10 +8,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import gradio as gr
 
 # Load and prepare data for the interface
-DATASET_URL = "https://raw.githubusercontent.com/mafgl/Spotify-Dataset/master/spotify_songs.csv"
+DATASET_URL = "https://github.com/M4uwi/Spotify-Recommendation-System-Matching-Music-by-Sound-Not-Genre-/blob/main/Dataset/spotify_songs.csv"
 df = pd.read_csv(DATASET_URL)
 df = df.drop_duplicates(subset=['track_name', 'track_artist']).reset_index(drop=True)
-df = df.dropna().head(5000)
 
 ACOUSTIC_FEATURES = [
     'danceability', 'energy', 'key', 'loudness', 'mode', 
