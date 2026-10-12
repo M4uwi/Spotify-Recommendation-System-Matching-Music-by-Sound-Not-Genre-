@@ -3,8 +3,8 @@ project:
   version: "1.0.0"
 
 data:
-  dataset_url: "https://raw.githubusercontent.com/mafgl/Spotify-Dataset/master/spotify_songs.csv"
-  max_samples: 5000
+  dataset_url: "https://github.com/M4uwi/Spotify-Recommendation-System-Matching-Music-by-Sound-Not-Genre-/blob/main/Dataset/spotify_songs.csv"
+  max_samples: 20000
 
 features:
   acoustic_attributes:
