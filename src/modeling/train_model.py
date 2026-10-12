@@ -10,12 +10,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def run_pipeline():
     # 1. Ingest Data
-    DATASET_URL = "https://raw.githubusercontent.com/mafgl/Spotify-Dataset/master/spotify_songs.csv"
+    DATASET_URL = "https://github.com/M4uwi/Spotify-Recommendation-System-Matching-Music-by-Sound-Not-Genre-/blob/main/Dataset/spotify_songs.csv"
     df = pd.read_csv(DATASET_URL)
     
     # Clean data
     df = df.drop_duplicates(subset=['track_name', 'track_artist']).reset_index(drop=True)
-    df = df.dropna().head(5000)
     
     # 2. Define Features
     ACOUSTIC_FEATURES = [
