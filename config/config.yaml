@@ -3,7 +3,7 @@ project:
   version: "1.0.0"
 
 data:
-  raw_path: "dataset/spotify_songs.csv"
+  raw_path: "Dataset/spotify_songs.csv"
   max_samples: 25000
 
 features:
